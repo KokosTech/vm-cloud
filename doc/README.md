@@ -1,3 +1,23 @@
+CloudBalkan
+
+lyubomir.stoyanov@oblak.bg 
+
+2 контролни на срок
+2-ри срок по-важен
+
+Модел записки :)
+
+Диалогично 
+
+
+Docker - имплементация на LXC - Linux Containers since 2x kernel based on cgroups and namespaces in the linux kernel 
+Docker versioning - aka with containers with Git
+Public and corporate versions 
+
+виртуализация
+
+----
+
 Хипервайзор
 Мултитаскинг – Разделяме времето, за което всеки процес използва процесора (дадени ресурси), 
 Имплементацията на мултитаскинга опира до Кърнела.
@@ -87,6 +107,22 @@ L7 -> по URL
 За виртуалните машини е необходима виртуална мрежа, защото няма как физически да бъде свързана. Виртуалните машини могат да комуникират само във виртуалната мрежа.
 
 
+OSI модел:
+7 слоя:
+-    Физически -> кабели
+-    Data Link -> MAC адреси (уникален е за всяко устройство)
+-    Network -> IP адреси (имаме public и private)
+Public -> Той е видим за цял свят (Пр.: 56.10.24.170 / 32)
+Private -> Видим е за локалната мрежа (Пр.: 192.168.0.10 / 24)
+IPv4 -> 32 bits
+IPv6 -> 128 bits
+-    Transport (TCP/UDP) -> конвенция как да се интерпретира инфото 
+- TCP -> надежно, с TCP Handshake, по-висока латентност 
+Slow Loris, Smurf
+-    Session -> Session Key
+-    Presentation -> определяне на тип данни – mime type 
+-    Application -> http(s), (s)ftp, ssh, ..
+
 ---
 
 Storage-и:
@@ -160,4 +196,4 @@ URL (HTTP)		File
 ----
 
 Източници: 
-За лекция 1, 2 и 3 - Кристиян Богданов
+Части от лекция 1, 2 и 3 - Кристиян Богданов
