@@ -50,7 +50,7 @@ Elasticsearch – база данни, за работа със документ
 - Вместо горното, може да ползваме граф - имамекорен, чиито деца са severity, чиито деца са обекти - хеш таблица, в които има pointer към графи за stacktrace и message (един за всички hashtable-и) като value, а като ключ - timestamp. Така скоростта на търсене в граф е O(log(n)), а за hashtable - O(1)
 - Ако искаме повече полета, ползваме още един граф
 - Elastic Search има много алгоритми за обработка на език и запазва само най-есенциалното, като няма информационен излишък
-- За да се възстанови наново изречението, както е било (с информационен излишък) се ползва математически модел на езика 
+- За да се възстанови наново изречението, както е било (с информационен излишък) се ползва математически модел на езика
 
 ## Serverless
 
@@ -114,3 +114,25 @@ Cold Boot обаче може да трае до цели 30мин.
 AWS имат лимитазия за execution time-a на една функция, който е от сорта на минута и половина. Една lambda function вдига контейнер.
 
 _Записки за Serverless предоставени от Тишо <3_
+
+## Serverless & Lambda (Google Bard)
+
+Serverless computing is a cloud computing model in which the cloud provider takes care of all the infrastructure management, including provisioning and managing servers, operating systems, networking, and storage. This frees developers from having to worry about the underlying infrastructure, so they can focus on developing their applications.
+
+AWS Lambda is a serverless computing service that lets you run code without provisioning or managing servers. You can create Lambda functions that are triggered by events, such as HTTP requests, file uploads, or database changes. Lambda functions can be used to perform a variety of tasks, such as processing data, generating content, and responding to events.
+
+Here are some of the benefits of using serverless computing and AWS Lambda:
+
+- **_Scalability:_** Serverless computing is highly scalable, so you can easily add or remove capacity as needed. This can help you save money on infrastructure costs.
+- **_Cost-effectiveness:_** Serverless computing can be more cost-effective than traditional on-premises or cloud computing solutions. This is because you only pay for the resources that you use.
+- **_Ease of use:_** Serverless computing is easy to use, even for developers who are not familiar with cloud computing. This is because you do not need to worry about provisioning or managing servers.
+
+If you are looking for a scalable, cost-effective, and easy-to-use cloud computing solution, then serverless computing and AWS Lambda are good options to consider.
+
+Here are some examples of how AWS Lambda can be used:
+
+- **_Processing data:_** Lambda functions can be used to process large amounts of data in real time. For example, you could use Lambda to process sensor data from a manufacturing plant or financial data from a stock exchange.
+- **_Generating content:_** Lambda functions can be used to generate content, such as news articles, blog posts, or social media posts. For example, you could use Lambda to generate weather forecasts or sports scores.
+- **_Responding to events:_** Lambda functions can be used to respond to events, such as HTTP requests, file uploads, or database changes. For example, you could use Lambda to send an email notification when a new customer signs up for your service or to create a new record in a database when a file is uploaded.
+
+If you are looking for a way to use serverless computing to build your next application, then AWS Lambda is a good option to consider.
