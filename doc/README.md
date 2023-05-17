@@ -2,6 +2,37 @@
 
 ## Elastic Search
 
+Elastic Search е база данни, която се използва за търсене на данни. Тя е написана на Java и е open source. Тя е базирана на Apache Lucene и е разработена от Elastic. Използва се най-често за логове и анализиране на данни.
+
+### Писане на логове - за trace-ване на activity
+
+Log-овете са обикновено в следния формат:
+
+```
+[timestamp][log_level][stacktrace][message]
+```
+
+Като има два стандарта за log level severity (един правилен и един грешен)
+
+- Linux (0-9)
+- Windows - (0-7)
+
+Идеята за Elastic Search е дошла от нуждата да се избегне четене на стотици log файлове (от Oracle)
+
+Ползват библиотека на Apache (Lucene), която е написана на Java. И така създават Elastic Search
+
+Elasticsearch – база данни, за работа със документи със текстова информация
+
+- Logstash – централизиран интерфейс за работа с еластик сърч, вкарва документи в базата данни; много усъвършенстван аргумент
+- Kibana – визуализация на  данните от еластик сърч, визуално предава инфото събрано от logstash; много powerful инструмент за визуализация
+
+Примерен log: 
+  
+  ```
+  -	2022-03-22  16:11:032  ERROR  “nullpointerexception”  “oops!”
+0-9
+  ```
+
 ## Serverless
 
 input -> event (trigger, processing -> trigger) -> trigger (result)
